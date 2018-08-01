@@ -58,6 +58,22 @@ En otras palabras Godot es un editor de escenas.
 
 ---
 
+### IE of Scenes diagram ~~Ejemplo de diagrama de escenas~~
+
+Shooter game example
+
+![Shooter example](shooter_instancing.png)
+
+Example from http://docs.godotengine.org/en/3.0/getting_started/step_by_step/instancing_continued.html
+
+Open World Game example
+
+![Shooter example](openworld_instancing.png)
+
+Example from http://docs.godotengine.org/en/3.0/getting_started/step_by_step/instancing_continued.html
+
+---
+
 ### Configuration of ProjectSettings ~~Configuración del ProjectSettings~~
 
 ProjectSettings uses singleton software design pattern, in other words ProjectSettings is an unique object instance.
