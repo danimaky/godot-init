@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://game.gd" type="Script" id=1]
+[ext_resource path="res://paddle.gd" type="Script" id=2]
 
 [node name="game" type="Node2D" index="0"]
 
@@ -16,6 +17,8 @@ linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
+script = ExtResource( 2 )
+ball_dir = 1
 
 [node name="Sprite" type="Sprite" parent="left" index="0"]
 
@@ -31,6 +34,8 @@ linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
+script = ExtResource( 2 )
+ball_dir = 1
 
 [node name="Sprite" type="Sprite" parent="right" index="0"]
 
