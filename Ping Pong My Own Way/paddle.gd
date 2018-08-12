@@ -6,8 +6,7 @@ const MOVE_SPEED = 100
 # var a = 2
 # var b = "textvar"
 func _ready():
-	#self.get_node("CollisionShape")
-	pass
+	connect("area_entered", self, "_on_area_entered")
 func _process(delta):
 	var which = get_name()
 	if Input.is_action_pressed(which+"_up") and position.y > 0:
@@ -16,5 +15,7 @@ func _process(delta):
 		position.y += MOVE_SPEED * delta
 
 func _on_area_entered( area ):
+	print("entro")
 	if area.get_name() == "ball":
-		area.direction = Vector2(ball_dir, randf()*2-1).normalized()
+		randomize()
+		area.direction = Vector2(area.direction.x*-1, randf() * 2 - 1).normalized()
